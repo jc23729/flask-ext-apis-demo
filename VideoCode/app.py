@@ -29,3 +29,7 @@ def get_location():
     address = request.args["address"]
     coords = get_coords(address)
     return render_template('address_form.html', coords=coords)
+
+@app.route('/JuansPage')
+def get_Juans():
+    return render_template("Juans.html")
